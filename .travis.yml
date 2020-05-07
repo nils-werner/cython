@@ -88,6 +88,7 @@ branches:
   only:
     - master
     - release
+    - travis-install
 
 before_install:
   - |
