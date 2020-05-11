@@ -87,6 +87,7 @@ branches:
   only:
     - master
     - release
+    - virtualenv_travis
 
 before_install:
   - |
