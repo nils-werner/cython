@@ -128,6 +128,7 @@ before_install:
   - if [ "$USE_VIRTUALENV" == "true" ]; then
       virtualenv .;
       source ./bin/activate;
+      python -m site;
     fi
 
 install:
