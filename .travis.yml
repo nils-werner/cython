@@ -62,7 +62,7 @@ matrix:
     - python: 3.8
       env: LIMITED_API=--limited-api EXCLUDE=--no-file
     - python: 3.8
-      env: LIMITED_API=--limited-api EXCLUDE=--no-file USE_VIRTUALENV=true
+      env: USE_VIRTUALENV=true
     - python: 3.7
       env: LIMITED_API=--limited-api EXCLUDE=--no-file
     - python: 3.6
@@ -127,7 +127,7 @@ before_install:
 
   - if [ "$USE_VIRTUALENV" == "true" ]; then
       virtualenv .;
-      source ./bin/activate.sh;
+      source ./bin/activate;
     fi
 
 install:
